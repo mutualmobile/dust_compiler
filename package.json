@@ -9,11 +9,12 @@
     "watch": "latest",
     "wrench": "latest"
   },
-  "engine": "node >= 0.8.7",
+  "engine": "node >= 0.6.6",
   "repository": {
     "type": "git",
     "url": "git://github.com/mutualmobile/dust_compiler.git"
   },
+  "preferGlobal": "true",
   "bin": {
     "dust_compiler" : "./dust_compiler.js"
   }

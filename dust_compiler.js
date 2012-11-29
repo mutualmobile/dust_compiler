@@ -18,7 +18,7 @@ var options = process.argv.slice(2),
     watchOptions, root, notificationCenterBinary;
 
 // Paths for OSX Notifications
-notificationCenterBinary = 'osx/terminal-notifier.app/Contents/MacOS/terminal-notifier';
+notificationCenterBinary = path.join(__dirname, 'osx/terminal-notifier.app/Contents/MacOS/terminal-notifier');
 
 switch (options[0]) {
   case undefined:
@@ -30,7 +30,7 @@ switch (options[0]) {
 }
 
 function showNotification(success, filename) {
-  var title = success ? 'Success' : 'Error',
+	var title = success ? 'Success' : 'Error',
       message = success ? 'Compiled ' + filename : 'Failed to compile ' + filename,
       group = 'dust_compiler',
       args = ['-title', title,

@@ -2,19 +2,18 @@
   "name": "dust_compiler",
   "description": "A simple Node command line tool that watches and compiles dust templates recursively from one directory to another",
   "author": "George Henderson",
-  "contributors": ["George Henderson <george.henderson@mutualmobile.com>", "Peter Zhang <peter.zhang@mutualmobile.com>"],
-  "version": "0.0.2",
+  "contributors": ["George Henderson <george.henderson@mutualmobile.com>", "Peter Zhang <peter.zhang@mutualmobile.com>", "Jake Riesterer <jake.riesterer@mutualmobile.com>"],
+  "version": "0.0.3",
   "dependencies": {
     "dustjs-linkedin": "latest",
     "watch": "latest",
-    "wrench": "latest"
+    "wrench": "latest",
   },
-  "engine": "node >= 0.6.6",
+  "engine": "node >= 0.8.7",
   "repository": {
     "type": "git",
     "url": "git://github.com/mutualmobile/dust_compiler.git"
   },
-  "preferGlobal": "true",
   "bin": {
     "dust_compiler" : "./dust_compiler.js"
   }

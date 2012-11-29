@@ -7,7 +7,7 @@
   "dependencies": {
     "dustjs-linkedin": "latest",
     "watch": "latest",
-    "wrench": "latest",
+    "wrench": "latest"
   },
   "engine": "node >= 0.8.7",
   "repository": {
